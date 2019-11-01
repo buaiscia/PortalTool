@@ -8,11 +8,7 @@ module.exports = {
     title: siteConfig.title,
     tagline: siteConfig.tagline,
     description: siteConfig.siteDescription,
-    author: siteConfig.author.name,
-    links: {
-      mobappmonitor: "https://pxy01-automation.us.prod/mobileapp-monitoring/",
-      newPKI: "https://pxy01-automation.us.prod/newPKI/"
-    }
+    author: siteConfig.author.name
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 // import SEO from "../components/seo"
 import Sidebar from "../components/sidebar/Sidebar"
 // import TechTag from "../components/tags/TechTag"
+import Main from "../components/main/main"
 
 const IndexPage = ({ data }) => {
   // const posts = data.allMarkdownRemark.edges
@@ -35,6 +36,7 @@ const IndexPage = ({ data }) => {
           <Sidebar />
         </div>
         <div className="post-list-main">
+             <Main />
           {/* {posts.map((post) => {
             const tags = post.node.frontmatter.tags
             return (

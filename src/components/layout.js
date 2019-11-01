@@ -23,10 +23,6 @@ const Layout = ({ children }) => {
             title
             tagline
             author
-            links {
-              mobappmonitor
-              newPKI      
-          }
           }
         }
       }
@@ -37,8 +33,6 @@ const Layout = ({ children }) => {
             siteTitle={data.site.siteMetadata.title}
             tagline={data.site.siteMetadata.tagline}
             author={data.site.siteMetadata.author}
-            
-            
             />
           <div
             style={{
@@ -47,7 +41,10 @@ const Layout = ({ children }) => {
               paddingTop: 0,
             }}
           >
-            <main className="p-4">{children}</main>
+            <main className="p-4">{children}
+            
+            </main>
+            
             <footer className="text-center">
               <hr/>
               <p className="d-inline">© {new Date().getFullYear()} EmbedIT</p>

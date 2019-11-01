@@ -8,7 +8,6 @@ module.exports = {
   author: {
     name: "Alex Buaiscia",
    },
-  siteDescription: "Travel graciously through the various tools of the Engineers",
-  try1: "this is try1"
+  siteDescription: "Travel graciously through the various tools of the Engineers"
   
 }
