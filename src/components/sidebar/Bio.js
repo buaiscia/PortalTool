@@ -1,15 +1,20 @@
 import React from "react"
 import "./sidebar.css"
 
-import willjw3 from "../../images/willjw3.jpg"
+import knights from "../../images/knights.jpg"
 
-const Bio = ({ author, tagline }) => {
+const Bio = ({ tagline, description }) => {
 
     return (
         <div className="bio-main w-75">
-            <img src={willjw3} style={{ maxWidth: `100px` }} className="profile-img" alt="" />
-            <h3 className="mt-2 author-bio">{author}</h3>
+            <img src={knights} style={{ maxWidth: `100px` }} className="profile-img" alt="" />
+            <p/>
             <small className="text-muted">{tagline}</small>
+            <br/>
+            <br/>
+            <small className="text-muted">{description}</small>
+
+        
         </div>
     )
 }

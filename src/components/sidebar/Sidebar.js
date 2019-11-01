@@ -3,10 +3,6 @@ import { StaticQuery, graphql, Link } from "gatsby"
 import Bio from "./Bio"
 import "./sidebar.css"
 
-// import SocialLinks from "./SocialLinks"
-// import TechTags from "./TechTags"
-
-
 const Sidebar = () => {
     return (
         <StaticQuery
@@ -17,8 +13,7 @@ const Sidebar = () => {
                             title
                             tagline
                             author
-                            
-                            
+                            description                       
                         }
                     }
                     allMarkdownRemark(
@@ -39,13 +34,17 @@ const Sidebar = () => {
             render={data => (
                 <>
                     <div className="sidebar-main border-right">
-                        <Bio author={data.site.siteMetadata.author} tagline={data.site.siteMetadata.tagline} />
+                        <Bio description={data.site.siteMetadata.description} tagline={data.site.siteMetadata.tagline} />
                         <div className="page-links">
                             <Link to="/"><span className="text-dark d-block py-1">Blog Home</span></Link>
                             <Link to="/about"><span className="text-dark d-block py-1">About</span></Link>
                             <Link to="/archive"><span className="text-dark d-block py-1">Archive</span></Link>
                         </div>
                         <div className="tech-tags mt-4">
+                        <br/>
+                        <br/>
+                        <h6 className="text-muted">Designed by {data.site.siteMetadata.author} </h6>
+
                         </div>
                     </div>
                 </>
