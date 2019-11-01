@@ -6,7 +6,9 @@ import PropTypes from "prop-types"
 import MobileBio from "./MobileBio"
 import "./header.css"
 
-const Header = ({ siteTitle, author, siteDescription }) => {
+
+
+const Header = ({ siteTitle, siteDescription }) => {
 
   return (
     <header

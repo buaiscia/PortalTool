@@ -13,7 +13,12 @@ const Sidebar = () => {
                             title
                             tagline
                             author
-                            description                       
+                            description
+                            links {
+                                mobappmonitor
+                                newPKI      
+                            }
+                                        
                         }
                     }
                     allMarkdownRemark(
@@ -36,9 +41,11 @@ const Sidebar = () => {
                     <div className="sidebar-main border-right">
                         <Bio description={data.site.siteMetadata.description} tagline={data.site.siteMetadata.tagline} />
                         <div className="page-links">
-                            <Link to="/"><span className="text-dark d-block py-1">Blog Home</span></Link>
-                            <Link to="/about"><span className="text-dark d-block py-1">About</span></Link>
-                            <Link to="/archive"><span className="text-dark d-block py-1">Archive</span></Link>
+                            <Link to="/"><span className="text-dark d-block py-1">Homepage</span></Link>
+                    
+        
+                            <a href={data.site.siteMetadata.links.mobappmonitor} target="__blank"><span className="text-dark d-block py-1">mobappmonitor</span></a>
+                            <a href={data.site.siteMetadata.links.newPKI} target="__blank"><span className="text-dark d-block py-1">newPKI</span></a>
                         </div>
                         <div className="tech-tags mt-4">
                         <br/>
