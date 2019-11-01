@@ -23,13 +23,7 @@ const Layout = ({ children }) => {
             title
             tagline
             author
-            contacts {
-              linkedin
-              github
-              stackoverflow
-              freecodecamp
-              twitter
-            }
+            
           }
         }
       }

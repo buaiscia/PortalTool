@@ -4,38 +4,38 @@ import "bootstrap/dist/css/bootstrap.css"
 import "./index.css"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 import Sidebar from "../components/sidebar/Sidebar"
-import TechTag from "../components/tags/TechTag"
+// import TechTag from "../components/tags/TechTag"
 
 const IndexPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges
-  const labels = data.site.siteMetadata.labels
-  const currentPage = 1
-  const nextPage = (currentPage + 1).toString()
+  // const posts = data.allMarkdownRemark.edges
+  // const labels = data.site.siteMetadata.labels
+  // const currentPage = 1
+  // const nextPage = (currentPage + 1).toString()
 
-  const getTechTags = (tags) => {
-    const techTags = []
-    tags.forEach((tag, i) => {
-      labels.forEach((label) => {
-        if (tag === label.tag) {
-          techTags.push(<TechTag key={i} tag={label.tag} tech={label.tech} name={label.name} size={label.size} color={label.color} />)
-        }
-      })
-    })
-    return techTags
-  }
+  // const getTechTags = (tags) => {
+  //   const techTags = []
+  //   tags.forEach((tag, i) => {
+  //     labels.forEach((label) => {
+  //       if (tag === label.tag) {
+  //         techTags.push(<TechTag key={i} tag={label.tag} tech={label.tech} name={label.name} size={label.size} color={label.color} />)
+  //       }
+  //     })
+  //   })
+  //   return techTags
+  // }
 
 
   return (
     <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `javascript`, `react`, `web development`, `blog`, `graphql`]} />
+      {/* <SEO title="Home" keywords={[`gatsby`, `javascript`, `react`, `web development`, `blog`, `graphql`]} /> */}
       <div className="index-main">
         <div className="sidebar px-4 py-2">
           <Sidebar />
         </div>
         <div className="post-list-main">
-          {posts.map((post) => {
+          {/* {posts.map((post) => {
             const tags = post.node.frontmatter.tags
             return (
               <div key={post.node.id} className="container mt-5">
@@ -59,12 +59,12 @@ const IndexPage = ({ data }) => {
                 </div>
               </div>
             )
-          })}
-          <div className="mt-4 text-center">
+          })} */}
+          {/* <div className="mt-4 text-center">
             <Link to={nextPage} rel="next" style={{ textDecoration: `none` }}>
               <span className="text-dark">Next Page →</span>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </Layout>
@@ -77,13 +77,7 @@ export const pageQuery = graphql`
              siteMetadata {
                title 
                author
-               labels {
-                 tag
-                 tech 
-                 name 
-                 size 
-                 color
-               } 
+               
              }
            }
            allMarkdownRemark(
