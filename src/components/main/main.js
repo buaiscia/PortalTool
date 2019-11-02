@@ -1,10 +1,16 @@
 import React from "react";
 import Iframe from 'react-iframe';
+
+
 import PKI from '../../images/PKI.png';
 import mob_mon from '../../images/mob_mon.png';
 import classes from "./Main.module.css"
 
+
 const MainPage = (props) => {
+
+   
+
     return(
         <div id="main">
             <div id="top">
@@ -22,14 +28,15 @@ const MainPage = (props) => {
             </div>
 
                                    
-            <div id="bigFrameDiv">
+            <div id="bigFrameDiv" className="bigFrameDiv">
                         <Iframe 
                             width="1500px"
                             height="900px"
                             id="theFrame"
                             name="theFrame"
-                            display="initial"
+                            // display="initial"
                             position="relative"
+                            frameBorder="5px"
                             target="_self"/>
 
             </div>
