@@ -1,10 +1,14 @@
 import React from "react";
 import Iframe from 'react-iframe';
+import classes from "./Main.module.css"
 
 
+//PREVIEWS
 import PKI from '../../images/PKI.png';
 import mob_mon from '../../images/mob_mon.png';
-import classes from "./Main.module.css"
+import mon_stat from '../../images/monitor_status.png'
+
+
 
 
 const MainPage = (props) => {
@@ -24,6 +28,8 @@ const MainPage = (props) => {
                             <a href="#" onClick={(e) => props.openFrame(e, 1)}><img src={PKI} alt="PKI Deployment"></img></a> 
                         
                             <a href="#" onClick={(e) => props.openFrame(e, 2)}><img src={mob_mon} alt="Mobile Monitoring"></img></a>
+                            
+                            <a href="#" onClick={(e) => props.openFrame(e, 3)}><img src={mon_stat} alt="Mobile Monitoring"></img></a>
 
             </div>
 

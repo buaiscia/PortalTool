@@ -53,6 +53,11 @@ OpenFrame (e,id) {
             open_window = window.open(link.mobappmonitor, "theFrame");
             break;
         }
+        case 3: {
+            this.hideGridDiv(frame);
+            open_window = window.open(link.monitorStatus, "theFrame");
+            break;
+        }
     }
 
 }
