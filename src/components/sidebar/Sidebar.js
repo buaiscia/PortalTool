@@ -39,10 +39,7 @@ const Sidebar = () => {
                     <div className="sidebar-main border-right">
                         <Bio description={data.site.siteMetadata.description} tagline={data.site.siteMetadata.tagline} />
                         <div className="page-links">
-                            <Link to="/"><span className="text-dark d-block py-1">Homepage</span></Link>
-                            <Link to="/"><span className="text-dark d-block py-1">Homepage</span></Link>
-
-        
+                            <Link to="/"><span className="text-dark d-block py-1">Homepage</span></Link>     
                             <a href={link.mobappmonitor} target="__blank"><span className="text-dark d-block py-1">mobappmonitor</span></a>
                             <a href={link.newPKI} target="__blank"><span className="text-dark d-block py-1">newPKI</span></a>
                         </div>

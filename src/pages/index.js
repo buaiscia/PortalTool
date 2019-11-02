@@ -23,32 +23,33 @@ class IndexPage extends React.Component {
 
   }
 
-  hideGridDiv() {   
+  hideGridDiv(frame) {   
     var elem = document.getElementById("imgGrid");
     elem.style.display = 'none';
+    frame.style.display = 'flex';
 }
 
 OpenFrame (e,id) {
     e.preventDefault();
-    var open_window;
-    
+    let open_window;
+    var show = document.getElementById("imgGrid");
+    var frame = document.getElementById("bigFrameDiv");
+
 
     switch(id) {
         case 0: {
-            var show = document.getElementById("imgGrid");
             if(show.style.display === 'none') {
                 show.style.display = 'grid';
-
             }
             break;
         }
         case 1: {
-            this.hideGridDiv();
+            this.hideGridDiv(frame);
             open_window = window.open(link.newPKI, "theFrame");
             break;
         }
         case 2: {
-            this.hideGridDiv();
+            this.hideGridDiv(frame);
             open_window = window.open(link.mobappmonitor, "theFrame");
             break;
         }
@@ -61,7 +62,7 @@ closeFrame(e) {
     var frame = document.getElementById("theFrame");
     // if(frame !== null) {
         frame.parentNode.replaceChild(frame, frame);
-        frame.hidden = true;
+        frame.style.display = 'none';
         this.OpenFrame(e, 0);
     // }
     // else {
