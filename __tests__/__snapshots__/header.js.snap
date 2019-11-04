@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  className="head-main"
+  style={
+    Object {
+      "background": "black",
+    }
+  }
+>
+  <div
+    className="head-elements"
+    style={
+      Object {
+        "margin": "0",
+        "padding": ".75rem",
+      }
+    }
+  >
+    <h1
+      className="head-logo ml-4"
+      style={
+        Object {
+          "margin": 0,
+        }
+      }
+    >
+      <a
+        href="/"
+        style={
+          Object {
+            "color": "white",
+            "textDecoration": "none",
+          }
+        }
+      >
+        The Portal Tool
+      </a>
+    </h1>
+  </div>
+  <div
+    className="mobile-bio-main"
+  >
+    <img
+      alt="author-pic"
+      className="ml-4 mt-2"
+      src="test-file-stub"
+      style={
+        Object {
+          "borderRadius": "50%",
+          "boxShadow": "1px 1px 3px",
+          "maxHeight": "75px",
+          "maxWidth": "75px",
+        }
+      }
+    />
+    <h4
+      className="mr-4 mt-4"
+    />
+  </div>
+</header>
+`;
