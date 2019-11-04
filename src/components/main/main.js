@@ -25,11 +25,11 @@ const MainPage = (props) => {
 
             <div id="imgGrid" className={classes.imgGrid}>
 
-                            <a href="#" onClick={(e) => props.openFrame(e, 1)}><img src={PKI} alt="PKI Deployment"></img></a> 
+                            <a href="#" onClick={(e) => props.openFrame(e, 1, 'link.newPKI')}><img src={PKI} alt="PKI Deployment"></img></a> 
                         
-                            <a href="#" onClick={(e) => props.openFrame(e, 2)}><img src={mob_mon} alt="Mobile Monitoring"></img></a>
+                            <a href="#" onClick={(e) => props.openFrame(e, 2, 'link.mobappmonitor')}><img src={mob_mon} alt="Mobile Monitoring"></img></a>
                             
-                            <a href="#" onClick={(e) => props.openFrame(e, 3)}><img src={mon_stat} alt="Mobile Monitoring"></img></a>
+                            <a href="#" onClick={(e) => props.openFrame(e, 3, 'link.monitorStatus')}><img src={mon_stat} alt="Mobile Monitoring"></img></a>
 
             </div>
 
