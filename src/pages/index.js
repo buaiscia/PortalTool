@@ -119,7 +119,7 @@ shouldComponentUpdate() {
         {/* <SEO title="Home" keywords={[`gatsby`, `javascript`, `react`, `web development`, `blog`, `graphql`]} /> */}
         <div className="index-main">
           <div className="sidebar px-4 py-2">
-            <Sidebar />
+            <Sidebar openFrame={this.OpenFrame} />
           </div>
           
           <div className="post-list-main">
