@@ -1,6 +1,8 @@
 import React from "react";
 import Iframe from 'react-iframe';
 import classes from "./Main.module.css"
+import StyledFrame from 'react-styled-frame'
+import styled, { ThemeProvider } from 'styled-components'
 
 
 //PREVIEWS
@@ -35,16 +37,21 @@ const MainPage = (props) => {
 
                                    
             <div id="bigFrameDiv" className="bigFrameDiv">
-                        <Iframe 
-                            width="1500px"
-                            height="900px"
+                <ThemeProvider theme={{ mode: 'dark' }}> 
+                        <StyledFrame 
+                            style={{
+                                width: '100%',
+                                height: '400%',
+                                position: 'relative',
+                                border: '5'
+                            }}
+                            // width="1500px"
+                            // height="900px"
+                            
                             id="theFrame"
                             name="theFrame"
-                            // display="initial"
-                            position="relative"
-                            frameBorder="5px"
                             target="_self"/>
-
+                </ThemeProvider>
             </div>
         </div>
 
