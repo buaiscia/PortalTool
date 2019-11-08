@@ -36,13 +36,13 @@ const MainPage = (props) => {
             </div>
 
                                    
-            <div id="bigFrameDiv" className="bigFrameDiv">
+            <div id="bigFrameDiv" className={classes.bigFrameDiv}>
                 <ThemeProvider theme={{ mode: 'dark' }}> 
                         <StyledFrame 
                             style={{
                                 width: '100%',
-                                height: '400%',
-                                position: 'relative',
+                                // height: '100%',
+                                // position: 'relative',
                                 border: '5'
                             }}
                             // width="1500px"
