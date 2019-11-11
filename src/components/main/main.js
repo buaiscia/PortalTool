@@ -4,8 +4,10 @@ import classes from "./Main.module.css"
 import StyledFrame from 'react-styled-frame'
 import styled, { ThemeProvider } from 'styled-components'
 
+import desc from '../../../configDesc';
 
-//PREVIEWS
+
+//PREVIEW IMAGES
 import PKI from '../../images/PKI.png';
 import mob_mon from '../../images/mob_mon.png';
 import mon_stat from '../../images/monitor_status.png'
@@ -27,11 +29,34 @@ const MainPage = (props) => {
 
             <div id="imgGrid" className={classes.imgGrid}>
 
-                            <a href="#" onClick={(e) => props.openFrame(e, 1, 'link.newPKI')}><img src={PKI} alt="PKI Deployment"></img></a> 
-                        
-                            <a href="#" onClick={(e) => props.openFrame(e, 2, 'link.mobappmonitor')}><img src={mob_mon} alt="Mobile Monitoring"></img></a>
+                        <div className={classes.img__wrap}>
+                            <a href="#" onClick={(e) => props.openFrame(e, 1, 'link.newPKI')}><img src={PKI} alt={desc.newPKI}></img>
+                                <div className={classes.img__description_layer}>
+                                    <p className={classes.img__description}>{desc.newPKI}</p>
+                                </div>
+                            </a> 
+                        </div>
+
+                        <div className={classes.img__wrap}>
+                            <a href="#" onClick={(e) => props.openFrame(e, 2, 'link.mobappmonitor')}><img src={mob_mon} alt={desc.mobappmonitor}></img>
+                                <div className={classes.img__description_layer}>
+                                    <p className={classes.img__description}>{desc.mobappmonitor}</p>
+                                </div>
+                            </a> 
+                        </div>
+
+                        <div className={classes.img__wrap}>
+                            <a href="#" onClick={(e) => props.openFrame(e, 3, 'link.monitorStatus')}><img src={mon_stat} alt={desc.monitorStatus}></img>
+                                <div className={classes.img__description_layer}>
+                                    <p className={classes.img__description}>{desc.monitorStatus}</p>
+                                </div>
+                            </a> 
+                        </div>
+
+
+                            {/* <a href="#" onClick={(e) => props.openFrame(e, 2, 'link.mobappmonitor')}><img src={mob_mon} alt="Mobile Monitoring"></img></a> */}
                             
-                            <a href="#" onClick={(e) => props.openFrame(e, 3, 'link.monitorStatus')}><img src={mon_stat} alt="Mobile Monitoring"></img></a>
+                            {/* <a href="#" onClick={(e) => props.openFrame(e, 3, 'link.monitorStatus')}><img src={mon_stat} alt="Mobile Monitoring"></img></a> */}
 
             </div>
 
