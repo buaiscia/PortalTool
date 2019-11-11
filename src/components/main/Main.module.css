@@ -14,8 +14,8 @@
 } */
 .img__wrap {
 	position: relative;
-	height: 320px;
-	width: 550px;
+	/* height: 320px;
+	width: 550px; */
   }
   
   .img__description_layer {

@@ -10,7 +10,8 @@ import desc from '../../../configDesc';
 //PREVIEW IMAGES
 import PKI from '../../images/PKI.png';
 import mob_mon from '../../images/mob_mon.png';
-import mon_stat from '../../images/monitor_status.png'
+import mon_stat from '../../images/monitor_status.png';
+import restorePoint from '../../images/RP.png';
 
 
 
@@ -49,6 +50,14 @@ const MainPage = (props) => {
                             <a href="#" onClick={(e) => props.openFrame(e, 3, 'link.monitorStatus')}><img src={mon_stat} alt={desc.monitorStatus}></img>
                                 <div className={classes.img__description_layer}>
                                     <p className={classes.img__description}>{desc.monitorStatus}</p>
+                                </div>
+                            </a> 
+                        </div>
+
+                        <div className={classes.img__wrap}>
+                            <a href="#" onClick={(e) => props.openFrame(e, 4, 'link.restorePoint')}><img src={restorePoint} alt={desc.restorePoint}></img>
+                                <div className={classes.img__description_layer}>
+                                    <p className={classes.img__description}>{desc.restorePoint}</p>
                                 </div>
                             </a> 
                         </div>
