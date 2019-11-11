@@ -11,6 +11,11 @@
 	width: 550px;
 }
 
+.imgGrid img:hover {
+	opacity: 0.4;
+	transition: 0.7s
+}
+
 .bigFrameDiv {
 	overflow: hidden;
   	padding-top: 56.25%;
@@ -25,4 +30,6 @@
 	top: 0;
 	width: 100%;
  } 
+
+
 
