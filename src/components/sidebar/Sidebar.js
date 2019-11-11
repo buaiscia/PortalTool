@@ -2,6 +2,8 @@ import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import Bio from "./Bio"
 import "./sidebar.css"
+import desc from '../../../configDesc';
+
 
 const link = require("../../../configLinks")
 
@@ -42,9 +44,10 @@ const Sidebar = (props) => {
                             <Link to="/"><span className="text-dark d-block py-1">Homepage</span></Link>     
                             {/* <a href={link.mobappmonitor} target="__blank"><span className="text-dark d-block py-1">mobappmonitor</span></a> */}
                             {/* <a href={link.newPKI} target="__blank"><span className="text-dark d-block py-1">newPKI</span></a> */}
-                            <a href="#" onClick={(e) => props.openFrame(e, 1, 'link.newPKI')}><span className="text-dark d-block py-1">PKI Deployment</span></a>
-                            <a href="#" onClick={(e) => props.openFrame(e, 2, 'link.mobappmonitor')}><span className="text-dark d-block py-1">Mobile App monitor</span></a>
-                            <a href="#" onClick={(e) => props.openFrame(e, 3, 'link.monitorStatus')}><span className="text-dark d-block py-1">Monitoring alerts checks</span></a>
+                            <a href="#" onClick={(e) => props.openFrame(e, 1, 'link.newPKI')}><span className="text-dark d-block py-1">{desc.newPKI}</span></a>
+                            <a href="#" onClick={(e) => props.openFrame(e, 2, 'link.mobappmonitor')}><span className="text-dark d-block py-1">{desc.mobappmonitor}</span></a>
+                            <a href="#" onClick={(e) => props.openFrame(e, 3, 'link.restorePoint')}><span className="text-dark d-block py-1">{desc.restorePoint}</span></a>
+                            <a href="#" onClick={(e) => props.openFrame(e, 4, 'link.fileFinder')}><span className="text-dark d-block py-1">{desc.fileFinder}</span></a>
 
                         </div>
                         <div className="tech-tags mt-4">

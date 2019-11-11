@@ -12,6 +12,7 @@ import PKI from '../../images/PKI.png';
 import mob_mon from '../../images/mob_mon.png';
 import mon_stat from '../../images/monitor_status.png';
 import restorePoint from '../../images/RP.png';
+import fileFinder from '../../images/fileFinder.png';
 
 
 
@@ -58,6 +59,14 @@ const MainPage = (props) => {
                             <a href="#" onClick={(e) => props.openFrame(e, 4, 'link.restorePoint')}><img src={restorePoint} alt={desc.restorePoint}></img>
                                 <div className={classes.img__description_layer}>
                                     <p className={classes.img__description}>{desc.restorePoint}</p>
+                                </div>
+                            </a> 
+                        </div>
+
+                        <div className={classes.img__wrap}>
+                            <a href="#" onClick={(e) => props.openFrame(e, 5, 'link.fileFinder')}><img src={fileFinder} alt={desc.fileFinder}></img>
+                                <div className={classes.img__description_layer}>
+                                    <p className={classes.img__description}>{desc.fileFinder}</p>
                                 </div>
                             </a> 
                         </div>
