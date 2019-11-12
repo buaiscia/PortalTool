@@ -5,14 +5,16 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
+import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.css"
 import Header from "./header/header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = (props) => {
+
+ console.log(props.openFrame);
 
   return (
     <StaticQuery
@@ -27,12 +29,13 @@ const Layout = ({ children }) => {
         }
       }
     `}
-      render={data => (
+      render={(data) => (
         <>
           <Header
             siteTitle={data.site.siteMetadata.title}
             tagline={data.site.siteMetadata.tagline}
             author={data.site.siteMetadata.author}
+            openFrame={props.openFrame}
             />
           <div
             style={{
@@ -41,8 +44,7 @@ const Layout = ({ children }) => {
               paddingTop: 0,
             }}
           >
-            <main className="p-4">{children}
-            
+            <main className="p-4">{props.children}
             </main>
             
             <footer className="text-center">

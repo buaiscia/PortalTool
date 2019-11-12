@@ -4,11 +4,13 @@ import PropTypes from "prop-types"
 
 
 import MobileBio from "./MobileBio"
+import desc from '../../../configDesc';
+
 import "./header.css"
 
 
 
-const Header = ({ siteTitle, siteDescription }) => {
+const Header = (props) => {
 
   return (
     <header
@@ -31,17 +33,23 @@ const Header = ({ siteTitle, siteDescription }) => {
               textDecoration: `none`,
             }}
           >
-            {siteTitle}
+            {props.siteTitle}
           </Link>
         </h1>
+        <a href="#" onClick={(e) => props.openFrame(e, 1, 'link.newPKI')}><span className="text-light d-block py-1">{desc.newPKI}</span></a>
+            
       </div>
-       <MobileBio author={siteDescription} />
+       <MobileBio author={props.siteDescription} />
     </header>
   )
 }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+}
+
+Header.propTypes = {
+  openFrame: PropTypes.func,
 }
 
 Header.defaultProps = {

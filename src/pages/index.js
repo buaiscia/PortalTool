@@ -7,6 +7,8 @@ import Layout from "../components/layout"
 import Sidebar from "../components/sidebar/Sidebar"
 import MainPage from "../components/main/Main"
 
+
+
 const link = require("../../configLinks")
 
 
@@ -30,11 +32,14 @@ class IndexPage extends React.Component {
 
   hideSidebar(barHide) {
     var bar = document.getElementById("sideBar");
-    if(barHide == true) {
+    var indexGrid = document.getElementById('index-main');
+    if(barHide === true) {
       bar.style.display = 'none';
+      indexGrid.style.display='block';
     }
     else {
       bar.style.display = 'block';
+      indexGrid.style.display='grid'
     }
     
     console.log('hidesidebar called');
@@ -86,9 +91,9 @@ shouldComponentUpdate() {
     
 
     return (
-      <Layout>
+      <Layout openFrame={this.OpenFrame}>
         {/* <SEO title="Home" keywords={[`gatsby`, `javascript`, `react`, `web development`, `blog`, `graphql`]} /> */}
-        <div className="index-main">
+        <div id="index-main" className="index-main">
           <div id="sideBar" className="sidebar px-4 py-2">
             <Sidebar openFrame={this.OpenFrame} />
           </div>
