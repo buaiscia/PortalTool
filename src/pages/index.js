@@ -1,12 +1,10 @@
 import React, {Component} from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.css"
 import "./index.css"
 
 import Layout from "../components/layout"
-// import SEO from "../components/seo"
 import Sidebar from "../components/sidebar/Sidebar"
-// import TechTag from "../components/tags/TechTag"
 import MainPage from "../components/main/Main"
 
 const link = require("../../configLinks")
@@ -148,28 +146,7 @@ export const pageQuery = graphql`
                
              }
            }
-           allMarkdownRemark(
-             limit: 3
-             sort: { fields: [frontmatter___date], order: DESC }
-             filter: { frontmatter: { published: { eq: true } } }
-           ) {
-             totalCount
-             edges {
-               node {
-                 excerpt(pruneLength: 200)
-                 html
-                 id
-                 frontmatter {
-                   title
-                   date(formatString: "MMMM DD, YYYY")
-                   tags
-                 }
-                 fields {
-                   slug
-                 }
-               }
-             }
-           }
+           
          }
        `
 

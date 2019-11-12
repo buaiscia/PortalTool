@@ -10,6 +10,7 @@ module.exports = {
     description: siteConfig.siteDescription,
     author: siteConfig.author.name
   },
+  pathPrefix: `/portal`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

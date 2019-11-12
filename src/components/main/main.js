@@ -2,7 +2,7 @@ import React from "react";
 import Iframe from 'react-iframe';
 import classes from "./Main.module.css"
 import StyledFrame from 'react-styled-frame'
-import styled, { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components'
 
 import desc from '../../../configDesc';
 
@@ -71,10 +71,6 @@ const MainPage = (props) => {
                             </a> 
                         </div>
 
-
-                            {/* <a href="#" onClick={(e) => props.openFrame(e, 2, 'link.mobappmonitor')}><img src={mob_mon} alt="Mobile Monitoring"></img></a> */}
-                            
-                            {/* <a href="#" onClick={(e) => props.openFrame(e, 3, 'link.monitorStatus')}><img src={mon_stat} alt="Mobile Monitoring"></img></a> */}
 
             </div>
 
