@@ -28,6 +28,18 @@ class IndexPage extends React.Component {
     console.log('hidegrid called')
 }
 
+  hideSidebar(barHide) {
+    var bar = document.getElementById("sideBar");
+    if(barHide == true) {
+      bar.style.display = 'none';
+    }
+    else {
+      bar.style.display = 'block';
+    }
+    
+    console.log('hidesidebar called');
+  }
+
 OpenFrame (e,id,nameApp) {
     e.preventDefault();
     let open_window;
@@ -38,47 +50,17 @@ OpenFrame (e,id,nameApp) {
     if(id === 0) {
       if(show.style.display === 'none') {
         show.style.display = 'grid';
+        this.hideSidebar(false);
         console.log('openframe with id 0')
       }
       console.log('openframe with id 0 out of the condition')
     }
     else {
       this.hideGridDiv(frame);
+      this.hideSidebar(true);
       open_window = window.open(tool, "theFrame");
       console.log('openframe with id != 0')
     }
-
-    // switch(id) {
-    //     case 0: {
-    //         if(show.style.display === 'none') {
-    //             show.style.display = 'grid';
-    //         }
-    //         break;
-    //     }
-        // case 1: {
-        //     this.hideGridDiv(frame);
-        //     open_window = window.open(link.newPKI, "theFrame");
-        //     break;
-        // }
-        // case 2: {
-        //     this.hideGridDiv(frame);
-        //     open_window = window.open(link.mobappmonitor, "theFrame");
-        //     break;
-        // }
-        // case 3: {
-        //     this.hideGridDiv(frame);
-        //     open_window = window.open(link.monitorStatus, "theFrame");
-        //     break;
-        // }
-    // }
-
-    // for(let i=1; i<=3; i++) {
-      // if(i === id) {
-        // this.hideGridDiv(frame);
-        // open_window = window.open(tool, "theFrame");
-        // break;
-      // }
-    // }
 
 
 }
@@ -91,22 +73,13 @@ closeFrame(e) {
         frame.style.display = 'none';
         this.OpenFrame(e, 0, null);
         console.log('closeframe called')
-    // }
-    // else {
-    //     this.OpenFrame(e, 0);
-    // }
+
 }
 
 shouldComponentUpdate() {
     return false;
     }
 
-// hideiFrame() {
-//   let frame = document.getElementById("theFrame");
-//     // console.log(frame);
-//   frame.hidden = true;
-// }
-    
 
   render() {
     
@@ -116,7 +89,7 @@ shouldComponentUpdate() {
       <Layout>
         {/* <SEO title="Home" keywords={[`gatsby`, `javascript`, `react`, `web development`, `blog`, `graphql`]} /> */}
         <div className="index-main">
-          <div className="sidebar px-4 py-2">
+          <div id="sideBar" className="sidebar px-4 py-2">
             <Sidebar openFrame={this.OpenFrame} />
           </div>
           
