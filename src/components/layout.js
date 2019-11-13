@@ -14,7 +14,6 @@ import "./layout.css"
 
 const Layout = (props) => {
 
- console.log(props.openFrame);
 
   return (
     <StaticQuery
