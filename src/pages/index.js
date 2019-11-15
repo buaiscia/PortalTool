@@ -88,7 +88,6 @@ shouldComponentUpdate() {
 
   render() {
     
-    
 
     return (
       <Layout openFrame={this.OpenFrame}>
