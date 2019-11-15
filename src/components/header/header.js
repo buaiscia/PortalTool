@@ -26,15 +26,13 @@ const Header = (props) => {
         }}
       >
         <h1 className="head-logo ml-4" style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {props.siteTitle}
-          </Link>
+          <a style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+            href="/">{props.siteTitle}
+          </a>
+
         </h1>
 
         <div className="dropdown">
@@ -60,19 +58,17 @@ const Header = (props) => {
         </div>
 
         <div className="dropdown">
-          <button className="dropbtn">{desc.monitorStatus}</button>
-          <div className="dropdown-content">
-            <a href="/" onClick={(e) => props.openFrame(e, 4, 'link.monitorStatus')}><span className="text-light d-block py-1">Open the app</span></a>
-          </div>
+          <a href="/" onClick={(e) => props.openFrame(e, 2, 'link.monitorStatus')}>
+            <button className="dropbtn">{desc.monitorStatus}</button>
+          </a>
         </div>
+
 
         <div className="dropdown">
-          <button className="dropbtn">{desc.fileFinder}</button>
-          <div className="dropdown-content">
-            <a href="/" onClick={(e) => props.openFrame(e, 5, 'link.fileFinder')}><span className="text-light d-block py-1">Open the app</span></a>
-          </div>
+          <a href="/" onClick={(e) => props.openFrame(e, 2, 'link.fileFinder')}>
+            <button className="dropbtn">{desc.fileFinder}</button>
+          </a>
         </div>
-
 
         {/* <a href="/" onClick={(e) => props.openFrame(e, 2, 'link.mobappmonitor')}><span className="text-light d-block py-1">{desc.mobappmonitor}</span></a> */}
         {/* <a href="/" onClick={(e) => props.openFrame(e, 3, 'link.restorePoint')}><span className="text-light d-block py-1">{desc.restorePoint}</span></a> */}

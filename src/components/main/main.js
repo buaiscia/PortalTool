@@ -25,7 +25,7 @@ const MainPage = (props) => {
         <div id="main">
             <div id="top">
                         {/* <a href="http://127.0.0.1:8000"><h1>Portal Tool Homepage</h1></a> */}
-                        <p><a href="#" onClick={(e) => props.closeFrame(e)}>Close the tab</a></p>
+                        <p><a href="/" onClick={(e) => props.closeFrame(e)}>Close the tab</a></p>
                         {/* <p><a href="http://127.0.0.1:8000">Close the tab</a></p> */}
             </div>
 
@@ -75,7 +75,7 @@ const MainPage = (props) => {
             </div>
 
                                    
-            <div id="bigFrameDiv" className={classes.bigFrameDiv}>
+            <div id="bigFrameDiv" className={classes.bigFrameDiv+ ' ' + classes.hidden}>
                 <ThemeProvider theme={{ mode: 'dark' }}> 
                         <StyledFrame 
                             style={{
