@@ -2,10 +2,10 @@
 
 module.exports = {
   
-    mobappmonitor: "Mobile app monitoring",
-    newPKI: "PKI deployment tool",
+    mobappmonitor: "Mobile app monitor",
+    newPKI: "PKI deployment",
     monitorStatus: "Monitor checks of status",
-    restorePoint: "Manage Restore Points and Stanbdy DB switch",
+    restorePoint: "Manage Restore Points / Stanbdy DBs",
     fileFinder: "Find files on our SFTP servers"
   
   

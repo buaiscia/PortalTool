@@ -1,5 +1,5 @@
 import React from "react";
-import Iframe from 'react-iframe';
+// import Iframe from 'react-iframe';
 import classes from "./Main.module.css"
 import StyledFrame from 'react-styled-frame'
 import { ThemeProvider } from 'styled-components'
@@ -32,7 +32,7 @@ const MainPage = (props) => {
             <div id="imgGrid" className={classes.imgGrid}>
 
                         <div className={classes.img__wrap}>
-                            <a href="#" onClick={(e) => props.openFrame(e, 1, 'link.newPKI')}><img src={PKI} alt={desc.newPKI}></img>
+                            <a href="/" onClick={(e) => props.openFrame(e, 1, 'link.newPKI')}><img src={PKI} alt={desc.newPKI}></img>
                                 <div className={classes.img__description_layer}>
                                     <p className={classes.img__description}>{desc.newPKI}</p>
                                 </div>
@@ -40,7 +40,7 @@ const MainPage = (props) => {
                         </div>
 
                         <div className={classes.img__wrap}>
-                            <a href="#" onClick={(e) => props.openFrame(e, 2, 'link.mobappmonitor')}><img src={mob_mon} alt={desc.mobappmonitor}></img>
+                            <a href="/" onClick={(e) => props.openFrame(e, 2, 'link.mobappmonitor')}><img src={mob_mon} alt={desc.mobappmonitor}></img>
                                 <div className={classes.img__description_layer}>
                                     <p className={classes.img__description}>{desc.mobappmonitor}</p>
                                 </div>
@@ -48,7 +48,7 @@ const MainPage = (props) => {
                         </div>
 
                         <div className={classes.img__wrap}>
-                            <a href="#" onClick={(e) => props.openFrame(e, 3, 'link.monitorStatus')}><img src={mon_stat} alt={desc.monitorStatus}></img>
+                            <a href="/" onClick={(e) => props.openFrame(e, 3, 'link.monitorStatus')}><img src={mon_stat} alt={desc.monitorStatus}></img>
                                 <div className={classes.img__description_layer}>
                                     <p className={classes.img__description}>{desc.monitorStatus}</p>
                                 </div>
@@ -56,7 +56,7 @@ const MainPage = (props) => {
                         </div>
 
                         <div className={classes.img__wrap}>
-                            <a href="#" onClick={(e) => props.openFrame(e, 4, 'link.restorePoint')}><img src={restorePoint} alt={desc.restorePoint}></img>
+                            <a href="/" onClick={(e) => props.openFrame(e, 4, 'link.restorePoint')}><img src={restorePoint} alt={desc.restorePoint}></img>
                                 <div className={classes.img__description_layer}>
                                     <p className={classes.img__description}>{desc.restorePoint}</p>
                                 </div>
@@ -64,7 +64,7 @@ const MainPage = (props) => {
                         </div>
 
                         <div className={classes.img__wrap}>
-                            <a href="#" onClick={(e) => props.openFrame(e, 5, 'link.fileFinder')}><img src={fileFinder} alt={desc.fileFinder}></img>
+                            <a href="/" onClick={(e) => props.openFrame(e, 5, 'link.fileFinder')}><img src={fileFinder} alt={desc.fileFinder}></img>
                                 <div className={classes.img__description_layer}>
                                     <p className={classes.img__description}>{desc.fileFinder}</p>
                                 </div>
