@@ -1,11 +1,18 @@
 
+:root {
+  --nice-blue: rgba(36, 62, 206, 0.6);
+  --less-black: rgba(29,29,45);
+  
+}
+
+
 p, .title {
   font-family: "Raleway";
 }
 
 .index-main {
     display: grid;
-    grid-template-columns: 0.7fr 2.3fr;
+    grid-template-columns: 0.4fr 2.6fr;
 } 
 
 .sidebar {

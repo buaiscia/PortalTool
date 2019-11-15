@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React, { Component } from "react"
 import { graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.css"
 import "./index.css"
@@ -16,44 +16,44 @@ class IndexPage extends React.Component {
 
 
   constructor() {
-        super();
-        this.hideGridDiv = this.hideGridDiv.bind(this);
-        this.OpenFrame = this.OpenFrame.bind(this);
-        this.closeFrame = this.closeFrame.bind(this);
+    super();
+    this.hideGridDiv = this.hideGridDiv.bind(this);
+    this.OpenFrame = this.OpenFrame.bind(this);
+    this.closeFrame = this.closeFrame.bind(this);
 
   }
 
-  hideGridDiv(frame) {   
+  hideGridDiv(frame) {
     var elem = document.getElementById("imgGrid");
     elem.style.display = 'none';
     frame.style.display = 'flex';
     console.log('hidegrid called')
-}
+  }
 
   hideSidebar(barHide) {
     var bar = document.getElementById("sideBar");
     var indexGrid = document.getElementById('index-main');
-    if(barHide === true) {
+    if (barHide === true) {
       bar.style.display = 'none';
-      indexGrid.style.display='block';
+      indexGrid.style.display = 'block';
     }
     else {
       bar.style.display = 'block';
-      indexGrid.style.display='grid'
+      indexGrid.style.display = 'grid'
     }
-    
+
     console.log('hidesidebar called');
   }
 
-OpenFrame (e,id,nameApp) {
+  OpenFrame(e, id, nameApp) {
     e.preventDefault();
     let open_window;
     var show = document.getElementById("imgGrid");
     var frame = document.getElementById("bigFrameDiv");
     let tool = eval(nameApp);
 
-    if(id === 0) {
-      if(show.style.display === 'none') {
+    if (id === 0) {
+      if (show.style.display === 'none') {
         show.style.display = 'grid';
         this.hideSidebar(false);
         console.log('openframe with id 0')
@@ -68,26 +68,26 @@ OpenFrame (e,id,nameApp) {
     }
 
 
-}
+  }
 
-closeFrame(e) {
+  closeFrame(e) {
     e.preventDefault();
     var frame = document.getElementById("bigFrameDiv");
     // if(frame !== null) {
-        frame.parentNode.replaceChild(frame, frame);
-        frame.style.display = 'none';
-        this.OpenFrame(e, 0, null);
-        console.log('closeframe called')
+    frame.parentNode.replaceChild(frame, frame);
+    frame.style.display = 'none';
+    this.OpenFrame(e, 0, null);
+    console.log('closeframe called')
 
-}
+  }
 
-shouldComponentUpdate() {
+  shouldComponentUpdate() {
     return false;
-    }
+  }
 
 
   render() {
-    
+
 
     return (
       <Layout openFrame={this.OpenFrame}>
@@ -96,14 +96,14 @@ shouldComponentUpdate() {
           <div id="sideBar" className="sidebar px-4 py-2">
             <Sidebar openFrame={this.OpenFrame} />
           </div>
-          
-          <div className="post-list-main">
-               <MainPage 
-                openFrame={this.OpenFrame} 
-                closeFrame={this.closeFrame}
 
-               />
-            
+          <div className="post-list-main">
+            <MainPage
+              openFrame={this.OpenFrame}
+              closeFrame={this.closeFrame}
+
+            />
+
           </div>
         </div>
       </Layout>
@@ -111,7 +111,7 @@ shouldComponentUpdate() {
 
   }
 
-  
+
 }
 
 export const pageQuery = graphql`

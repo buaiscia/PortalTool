@@ -1,3 +1,4 @@
+
 /* IMAGES GRID */
 
 .imgGrid {
@@ -25,7 +26,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(36, 62, 206, 0.6);
+	background: var(--nice-blue);
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
@@ -77,3 +78,27 @@
 
 }
 
+.closeButton {
+display:inline-block;
+padding: 0.46em 1.6em;
+border:0.1em solid #000000;
+margin:0 0.2em 0.2em 0;
+border-radius:0.5em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#000000;
+text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+background-color:#FFFFFF;
+text-align:center;
+transition: all 0.4s;
+}
+
+.closeButton:hover {
+text-shadow: 0 0 2em rgba(255,255,255,1);
+color:white;
+border-color:var(--nice-blue);
+background-color:var(--nice-blue);
+
+}

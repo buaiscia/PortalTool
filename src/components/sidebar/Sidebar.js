@@ -40,9 +40,9 @@ const Sidebar = (props) => {
 
                         </div>
                         <div className="tech-tags mt-4">
-                        <br/>
-                        <br/>
-                        <h6 className="text-muted">Designed by {data.site.siteMetadata.author} </h6>
+                            <br />
+                            <br />
+                            <h6 className="text-muted">Designed by {data.site.siteMetadata.author} </h6>
 
                         </div>
                     </div>
