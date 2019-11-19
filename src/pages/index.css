@@ -15,9 +15,14 @@ p, .title {
     grid-template-columns: 0.4fr 2.6fr;
 } 
 
-.sidebar {
+#sidebar {
     width: 90%;
+    display: flex;
 }
+/* 
+#sideBar {
+  display: flex;
+} */
 
 
 

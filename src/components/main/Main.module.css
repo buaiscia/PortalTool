@@ -10,6 +10,10 @@
 
 }
 
+#imgGrid {
+	display: grid;
+}
+
 /* .imgGrid img{
 	height: 320px;
 	width: 550px;
@@ -101,4 +105,8 @@ color:white;
 border-color:var(--nice-blue);
 background-color:var(--nice-blue);
 
+}
+
+.topDiv {
+	display: none;
 }
