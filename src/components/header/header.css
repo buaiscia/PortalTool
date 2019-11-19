@@ -107,7 +107,7 @@ a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  transition: all 0.4s ease;
+  transition: all 0.4s;
 }
 
 /* Change color of dropdown links on hover */
@@ -120,12 +120,9 @@ a {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: var(--nice-blue);
-  transform: translateY(0);
-
 }
