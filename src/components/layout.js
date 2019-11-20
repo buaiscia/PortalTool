@@ -43,7 +43,7 @@ const Layout = (props) => {
               paddingTop: 0,
             }}
           >
-            <main className="p-4">{props.children}
+            <main className="padd">{props.children}
             </main>
             
             <footer className="text-center">

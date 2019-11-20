@@ -2,8 +2,8 @@
 
 module.exports = {
   url: "www.portal",
-  title: "The Portal Tool",
-  tagline: "Welcome to the Portal Tool",
+  title: "HomePage",
+  tagline: "Welcome to the Portal",
   copyright: "",
   author: {
     name: "Alex Buaiscia",

@@ -18,7 +18,7 @@ const Header = (props) => {
       <div className="head-elements"
         style={{
           margin: `0`,
-          padding: `.75rem`
+          padding: `0 1rem`
         }}
       >
         <h1 className="head-logo ml-4" style={{ margin: 0 }}>
@@ -65,11 +65,6 @@ const Header = (props) => {
             <button className="dropbtn">{desc.fileFinder}</button>
           </a>
         </div>
-
-        {/* <a href="/" onClick={(e) => props.openFrame(e, 2, 'link.mobappmonitor')}><span className="text-light d-block py-1">{desc.mobappmonitor}</span></a> */}
-        {/* <a href="/" onClick={(e) => props.openFrame(e, 3, 'link.restorePoint')}><span className="text-light d-block py-1">{desc.restorePoint}</span></a> */}
-        {/* <a href="/" onClick={(e) => props.openFrame(e, 4, 'link.monitorStatus')}><span className="text-light d-block py-1">{desc.monitorStatus}</span></a> */}
-        {/* <a href="/" onClick={(e) => props.openFrame(e, 5, 'link.fileFinder')}><span className="text-light d-block py-1">{desc.fileFinder}</span></a> */}
 
 
       </div>

@@ -8,11 +8,11 @@ import desc from '../../../configDesc';
 
 
 //PREVIEW IMAGES
-import PKI from '../../images/PKI.png';
-import mob_mon from '../../images/mob_mon.png';
-import mon_stat from '../../images/monitor_status.png';
-import restorePoint from '../../images/RP.png';
-import fileFinder from '../../images/fileFinder.png';
+import PKI from '../../images/PKI_2.png';
+import mob_mon from '../../images/mob_mon_2.png';
+import mon_stat from '../../images/monitor_status_2.png';
+import restorePoint from '../../images/RP_2.png';
+import fileFinder from '../../images/fileFinder_2.png';
 
 
 
@@ -23,41 +23,8 @@ class MainPage extends React.Component {
         super(props);
         props = this.props;
         this.gridSection = React.createRef();
-        // this.hideButton = this.hideButton.bind(this);
 
     }
-
-
-
-    // hideButton() {
-
-    //     let gridProp = window.getComputedStyle(this.gridSection.current, null).getPropertyValue("display");
-    //     console.log(gridProp);
-
-    //     var textCenter = { 'textAlign': 'center' }
-    //     let props = this.props;
-
-    //     if (gridProp === "grid") {
-    //         console.log("returned grid");
-    //     }
-
-    //     console.log(this.state.isGrid)
-    // }
-
-    // return (
-    //     <div id="top">
-    //     {/* <a href="http://127.0.0.1:8000"><h1>Portal Tool Homepage</h1></a> */}
-    //     <p style={textCenter}>
-    //         <a href="/" onClick={(e) => props.closeFrame(e)}><button className={classes.closeButton}>Close it</button></a>
-    //     </p>
-    //     {/* <p><a href="http://127.0.0.1:8000">Close the tab</a></p> */}
-    //     </div>
-    // )
-
-
-
-
-
 
 
     render() {
@@ -65,16 +32,14 @@ class MainPage extends React.Component {
         var textCenter = { 'textAlign': 'center' }
 
         let props = this.props;
-        // var isHidden = document.getElementById('index-main');
-        // var isHidden2 = window.getComputedStyle(isHidden, null).getPropertyValue("display");
-        // console.log(isHidden);
-        let gridProp = this.gridProp
+
+        // let gridProp = this.gridProp
 
 
         return (
             <div id="main">
               
-                <div class={classes.topDiv} id="topDiv">
+                <div className={classes.topDiv} id="topDiv">
 
 
                     <p style={textCenter}>
