@@ -50,12 +50,12 @@ class IndexPage extends React.Component {
     let open_window;
     var show = document.getElementById("imgGrid");
     var frame = document.getElementById("bigFrameDiv");
-    var topDiv = document.getElementById("topDiv");
+    // var topDiv = document.getElementById("topDiv");
     let tool = eval(nameApp);
 
     if (id === 0) {
       if (show.style.display === 'none') {
-        topDiv.style.display = 'none';
+        // topDiv.style.display = 'none';
         show.style.display = 'grid';
         this.hideSidebar(false);
         console.log('openframe with id 0')
@@ -65,7 +65,7 @@ class IndexPage extends React.Component {
     else {
       this.hideGridDiv(frame);
       this.hideSidebar(true);
-      topDiv.style.display = 'block';
+      // topDiv.style.display = 'block';
       open_window = window.open(tool, "theFrame");
       console.log('openframe with id != 0')
     }

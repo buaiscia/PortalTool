@@ -39,14 +39,14 @@ class MainPage extends React.Component {
         return (
             <div id="main">
               
-                <div className={classes.topDiv} id="topDiv">
+                {/* <div className={classes.topDiv} id="topDiv">
 
 
                     <p style={textCenter}>
 
                         <a href="/" onClick={(e) => props.closeFrame(e)}><button className={classes.closeButton}>Close it</button></a>
                     </p>
-                </div>
+                </div> */}
 
                 <div id="imgGrid" ref={this.gridSection} className={classes.imgGrid}>
 

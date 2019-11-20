@@ -50,6 +50,8 @@
   .img__description {
 	transition: .2s;
 	transform: translateY(1em);
+	font-size: 1rem;
+	font-weight: bold;
   }
   
   .img__wrap:hover .img__description {

@@ -35,6 +35,7 @@ const Layout = (props) => {
             tagline={data.site.siteMetadata.tagline}
             author={data.site.siteMetadata.author}
             openFrame={props.openFrame}
+            closeFrame={props.closeFrame}
             />
           <div
             style={{

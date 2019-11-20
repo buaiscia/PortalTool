@@ -21,12 +21,13 @@ const Header = (props) => {
           padding: `0 1rem`
         }}
       >
-        <h1 className="head-logo ml-4" style={{ margin: 0 }}>
+        <h1 className="head-logo ml-4" style={{ margin: `2px 0` }}>
           <a style={{
             color: `white`,
             textDecoration: `none`,
+            fontSize:  `1rem`,
           }}
-            href="/">{props.siteTitle}
+            href="" onClick={(e) => props.closeFrame(e)}>{props.siteTitle}
           </a>
 
         </h1>
