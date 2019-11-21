@@ -5,14 +5,14 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
   	grid-gap: 20px;
-		grid-auto-rows: minmax(100px, auto);
+	grid-auto-rows: minmax(100px, auto);
 	/* z-index: 1; */
 
 }
 
-#imgGrid {
+/* #imgGrid {
 	display: grid;
-}
+} */
 
 /* .imgGrid img{
 	height: 320px;
@@ -56,6 +56,10 @@
   
   .img__wrap:hover .img__description {
 	transform: translateY(0);
+  }
+
+  .img__wrap * {
+	  border-radius: 2%;
   }
 
 

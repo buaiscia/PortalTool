@@ -8,11 +8,11 @@ import desc from '../../../configDesc';
 
 
 //PREVIEW IMAGES
-import PKI from '../../images/PKI_2.png';
-import mob_mon from '../../images/mob_mon_2.png';
-import mon_stat from '../../images/monitor_status_2.png';
-import restorePoint from '../../images/RP_2.png';
-import fileFinder from '../../images/fileFinder_2.png';
+import PKI from '../../images/PKI.png';
+import mob_mon from '../../images/mob_mon.png';
+import mon_stat from '../../images/monitor_status.png';
+import restorePoint from '../../images/RP.png';
+import fileFinder from '../../images/fileFinder.png';
 
 
 
