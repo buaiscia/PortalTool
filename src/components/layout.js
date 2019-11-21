@@ -40,7 +40,7 @@ const Layout = (props) => {
           <div
             style={{
               margin: `0 auto`,
-              padding: `0px 1.0875rem 1.45rem`,
+              // padding: `0px 1.0875rem 1.45rem`,
               paddingTop: 0,
             }}
           >
@@ -49,7 +49,7 @@ const Layout = (props) => {
             
             <footer className="text-center">
               <hr/>
-              <p className="d-inline">© {new Date().getFullYear()} EmbedIT</p>
+              <p className="d-inline">© {new Date().getFullYear()} EmbedIT - v 1.1 </p>
               {/* <p className="mt-5 text-muted d-inline"><i> Built with
                             {` `}
                 <a className="text-info" href="https://www.gatsbyjs.org">Gatsby</a></i>
