@@ -96,7 +96,7 @@ class IndexPage extends React.Component {
       <Layout openFrame={this.OpenFrame}>
         {/* <SEO title="Home" keywords={[`gatsby`, `javascript`, `react`, `web development`, `blog`, `graphql`]} /> */}
         <div id="index-main" className="index-main">
-          <div id="sideBar" className="sidebar px-4 py-2">
+          <div id="sideBar" className="sidebar px-3 py-4">
             <Sidebar openFrame={this.OpenFrame} />
           </div>
 

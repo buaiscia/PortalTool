@@ -1,5 +1,3 @@
-"use strict"
-
 module.exports = {
   url: "www.portal",
   title: "HomePage",

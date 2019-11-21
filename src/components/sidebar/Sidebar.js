@@ -31,9 +31,12 @@ const Sidebar = (props) => {
                         
                         <div className="tech-tags mt-4">
                             <br />
+                            <a href="https://wiki.homecredit.net/confluence/display/CD/Portal+Tool" target="_blank"><button>Open the Portal Wiki</button></a>
+                            <br />
+                            <br />
                             <br />
                             <h6 className="text-muted">Designed by {data.site.siteMetadata.author} </h6>
-
+                            
                         </div>
                     </div>
                 </>
