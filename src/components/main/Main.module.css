@@ -68,14 +68,14 @@
 
 .bigFrameDiv {
 	overflow: hidden;
-  	padding-top: 70%;
+  	padding-top: 100%;
 		position: relative;
 		/* z-index: 2; */
 }
 
 .bigFrameDiv iframe {
 	border: 0;
-	height: 120%;
+	height: 100%;
 	left: 0;
 	position: absolute;
 	top: 0;
