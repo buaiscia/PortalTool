@@ -50,6 +50,8 @@ class IndexPage extends React.Component {
     let open_window;
     var show = document.getElementById("imgGrid");
     var frame = document.getElementById("bigFrameDiv");
+    var padd = document.getElementById("mainPage");
+
     // var topDiv = document.getElementById("topDiv");
     let tool = eval(nameApp);
 
@@ -65,6 +67,8 @@ class IndexPage extends React.Component {
     else {
       this.hideGridDiv(frame);
       this.hideSidebar(true);
+      padd.style.paddingTop = '0px';
+
       // topDiv.style.display = 'block';
       open_window = window.open(tool, "theFrame");
       console.log('openframe with id != 0')
@@ -76,7 +80,9 @@ class IndexPage extends React.Component {
   closeFrame(e) {
     e.preventDefault();
     var frame = document.getElementById("bigFrameDiv");
+    // var padd = document.getElementById("mainPage");
     // if(frame !== null) {
+    // padd.style.paddingTop = '1rem !important';
     frame.parentNode.replaceChild(frame, frame);
     frame.style.display = 'none';
     this.OpenFrame(e, 0, null);
